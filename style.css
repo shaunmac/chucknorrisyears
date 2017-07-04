@@ -1,0 +1,41 @@
+body {
+  background-image:url(images/bg.jpg);
+  background-repeat:no-repeat;
+  background-position:top center;
+  background-size:cover;
+  font-family: 'Roboto Slab', serif;
+}
+h1, h2{
+    font-family: 'Fugaz One', cursive;
+    text-align:center;
+    color:#fff;
+    text-transform:uppercase;
+}
+h1 {
+    margin-top:20vh;
+    font-size:80px;
+}
+h2 {
+    font-size:60px;
+}
+p{
+  text-align:center;
+  max-width:50%;
+  margin:30px auto;
+  color:#fff;
+}
+label {
+  color:#fff;
+}
+.form-age {
+  width:100%;
+  max-width:400px;
+  position:reltive;
+  margin:30px auto;
+}
+.form-age input[type='text']{
+  margin-bottom:15px;
+}
+.form-age input[type='submit']{
+  margin:0 auto;
+}
