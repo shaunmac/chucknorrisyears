@@ -32,6 +32,10 @@ p{
 label {
   color:#fff;
 }
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
 .video-background {
   background: #000;
   position: fixed;
