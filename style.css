@@ -1,9 +1,10 @@
+* { box-sizing: border-box; }
 body {
   background-image:url(images/bg-img.jpg);
   background-repeat:no-repeat;
   background-position:top center;
   background-size:cover;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Montserrat', sans-serif;
 }
 h1, h2{
     font-family: 'Fugaz One', cursive;
@@ -24,9 +25,27 @@ p{
   max-width:50%;
   margin:30px auto;
   color:#fff;
+  font-size:22px;
+  letter-spacing:1.3;
+  line-height:35px;
 }
 label {
   color:#fff;
+}
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
 }
 .form-age {
   width:100%;
