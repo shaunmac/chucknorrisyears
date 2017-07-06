@@ -61,3 +61,6 @@ label {
 .form-age input[type='submit']{
   margin:0 auto;
 }
+@media screen and (max-width: 767px) {
+    .video-background {display:none;}
+}
