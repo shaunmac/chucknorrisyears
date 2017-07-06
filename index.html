@@ -32,18 +32,20 @@
               <div class="col-sm-4 col-centered">
                   <div class="form-group">
                       <div class='input-group date' id='datetimepicker1'>
-                          <input type='text' class="form-control" placeholder="Enter Your Age" />
+                          <input type='text' class="form-control input-date" placeholder="Enter Your Age" />
                           <span class="input-group-addon">
                               <span class="glyphicon glyphicon-calendar"></span>
                           </span>
                       </div>
-                      <input class="btn" type="submit" value="Calculate" />
+                      <input class="btn btn-calculate" type="submit" value="Calculate" />
                   </div>
               </div>
               <script type="text/javascript">
                   $(function () {
-                      $('#datetimepicker1').datetimepicker();
-                        locale: 'au'
+                      $('#datetimepicker1').datetimepicker({
+                          defaultDate: "1/1/1980",
+                          format: 'DD/MM/YYYY'
+                      });
                   });
               </script>
           </div>
