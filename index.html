@@ -11,12 +11,15 @@
   <body>
     <div class="video-background">
       <div class="video-foreground">
-        <iframe id="video-bg" src="https://www.youtube.com/embed/aM-rq_xqciA?rel=0&amp;controls=0&amp;showinfo=0?ecver=2&amp;autoplay=1&amp;loop=1&iv_load_policy=3&mute=1" width="100%" height="100%" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>
+        <!--replacing iframe with video element allows us to set video attrivutes -->
+        <video class="video" src="video/home-video.mp4" autoplay loop muted></video>
+        <div class="video-overlay"></div>
       </div>
     </div>
-    <h1>Chuck Norris</h1>
+    <div class="vhs"><h1>Chuck Norris</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempor purus condimentum lorem blandit, ut lobortis eros maximus. Morbi sagittis, nibh vel tincidunt laoreet, justo dolor sagittis turpis, in dictum mi lorem quis velit.</p>
     <p>Fusce aliquam fringilla diam in posuere. Aenean vel magna sit amet justo pulvinar placerat eget at massa.<p>
+    </div>
     <div class="form-group form-age">
       <input type="text" class="form-control" placeholder="My age Is...">
       <input class="btn" type="submit" value="Submit" />
