@@ -1,11 +1,16 @@
 $(document).ready(function(){
 
+  $('#datetimepicker1').datetimepicker({
+      format: 'DD.MM.YYYY'
+  });
+
   function calculateChuckNorrisYears() {
     var d = new Date();
     var norrisAgeCalculation = d.getFullYear() - 1940;
-    var userAge = $('.form-control').value;
+    var formControl = $('.form-control').val();
+    var userAge = d.getFullYear() - (moment(formControl, 'DD.MM.YYYY').year());
 
-    console.log('userAge: ' + userAge);
+    console.log(userAge)
 
     if (userAge > 12) {
       var newAge = 21 / norrisAgeCalculation * userAge;
