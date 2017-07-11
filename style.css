@@ -6,9 +6,11 @@ body {
   background-size:cover;
   font-family: 'Montserrat', sans-serif;
 }
+body.success {
+  background-image:url(images/bg-img-success.jpg);
+}
 h1, h2{
     font-family: 'Fugaz One', cursive;
-    text-align:center;
     color:#fff;
     text-transform:uppercase;
 }
@@ -17,13 +19,15 @@ h1 {
     letter-spacing:2vw;
     margin-bottom:10vh;
 }
+.success h1 {
+    margin-bottom:1vh;
+}
 h2 {
     margin-top:20vh;
     font-size:2.4vw;
     letter-spacing:0.5vw;
 }
 p{
-  text-align:center;
   margin:30px auto;
   color:#fff;
   font-size:1.32vw;
@@ -55,9 +59,34 @@ label {
   pointer-events: none;
 }
 .date .form-control {
-  background-color:trasnparent!important;
+  background-color:transparent;
   border:none;
-  border-bottom:2px solid #fff;
+  border-bottom:4px solid #fff;
+  border-radius: 0;
+  font-size:30px;
+  letter-spacing:11px;
+  color:#fff;
+  font-family: 'Fugaz One', cursive;
+  font-style:italic;
+  text-align:center;
+  line-height:50px;
+  height:50px;
+  text-transform:uppercase;
+  appearance:none;
+  outline:none;
+}
+.input-group-addon {
+  background-color:transparent;
+  border:none;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:10;
+}
+.input-group-addon span {
+  display:none;
 }
 .btn-calculate, .btn-calculate:visited, .btn-calculate:focus, .btn-calculate:hover, .btn-calculate:active {
   -webkit-appearance:none;
