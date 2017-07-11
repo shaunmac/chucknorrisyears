@@ -11,15 +11,22 @@
     <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
   <body class="success">
+    <div class="video-background">
+      <div class="video-foreground">
+        <!--replacing iframe with video element allows us to set video attrivutes -->
+        <video class="video" src="video/result-video.mp4" autoplay loop muted></video>
+        <div class="video-overlay"></div>
+      </div>
+    </div>
     <div class="container">
           <div class="row">
-              <div class="col-sm-4 col-offset-1">
+              <div class="col-sm-6 col-offset-1">
                 <h2>You are</h2>
                 <h1>27</h1>
                 <h2>In Chuck Norris Years</h2>
               </div>
           </div>
-          <a class="btn btn-calculate" href="index.html" />Calculate Again</a>
+          <a class="btn btn-calculate btn-left" href="index.html" />Calculate Again</a>
       </div>
   </body>
   <script type="text/javascript" src="js/script.js"></script>
