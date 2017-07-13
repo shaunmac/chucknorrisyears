@@ -8,16 +8,23 @@ $(document).ready(function(){
     var d = new Date();
     var norrisAgeCalculation = d.getFullYear() - 1940;
     var formControl = $('.form-control').val();
-    var userAge = d.getFullYear() - (moment(formControl, 'DD.MM.YYYY').year());
 
-    console.log(userAge)
+    if(formControl != ''){
+      var userAge = d.getFullYear() - (moment(formControl, 'DD.MM.YYYY').year());
+      $('.form').addClass('hidden');
 
-    if (userAge > 12) {
-      var newAge = 21 / norrisAgeCalculation * userAge;
-      document.body.innerHTML = ('YOU ARE '  + Math.round(newAge + 9)) + ' IN CHUCK NORRIS YEARS';
+      if (userAge > 12) {
+        var newAge = 21 / norrisAgeCalculation * userAge;
+        $('.user-age').html(Math.round(newAge));
+        $('.success').removeClass('hidden');
+      } else {
+        $('.too-young').removeClass('hidden');
+      }
     } else {
-      document.body.innerHTML = ('sorry you are too young for this calculation');
+      // form control is empty
     }
+
+
   }
 
   $('.btn').on('touch click', function(){
