@@ -125,7 +125,12 @@ label {
 	height: 68px;
   border-radius: 5px;
 }
-.btn-calculate, .btn-calculate:visited, .btn-calculate:focus  {
+.btn-calculate,
+.btn-calculate:visited,
+.btn-calculate:focus,
+.btn-back,
+.btn-back:visited,
+.btn-back:focus  {
 	background-color: #f68523;
 	box-shadow: 0 6px 0 0 #a75d1c;
   -webkit-transition: 0.1s ease-in-out;
