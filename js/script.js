@@ -11,7 +11,7 @@ $(document).ready(function(){
     $('.form').addClass('hidden');
     if(formControl != ''){
       var userAge = d.getFullYear() - (moment(formControl, 'DD.MM.YYYY').year());
-    
+
 
       if (userAge > 12) {
         var newAge = 21 / norrisAgeCalculation * userAge;
@@ -29,8 +29,14 @@ $(document).ready(function(){
 
   }
 
-  $('.btn').on('touch click', function(){
+  $('.btn-calculate').on('touch click', function(){
     calculateChuckNorrisYears();
+  });
+  // calculate again button
+  $('.btn-back').on('touch click', function(){
+    $(this).parent().addClass('hidden');
+    $('.form').removeClass('hidden');
+
   });
 
 });
