@@ -101,7 +101,16 @@ label {
   border:none;
   border-bottom:2px solid #fff;
 }
-.btn-calculate, .btn-calculate:visited, .btn-calculate:focus, .btn-calculate:hover, .btn-calculate:active {
+.btn-calculate,
+.btn-calculate:visited,
+.btn-calculate:focus,
+.btn-calculate:hover,
+.btn-calculate:active,
+.btn-back,
+.btn-back:visited,
+.btn-back:focus,
+.btn-back:hover,
+.btn-back:active {
   -webkit-appearance:none;
   outline:none!important;
   color:#fff;
