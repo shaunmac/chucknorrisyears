@@ -8,10 +8,10 @@ $(document).ready(function(){
     var d = new Date();
     var norrisAgeCalculation = d.getFullYear() - 1940;
     var formControl = $('.form-control').val();
-
+    $('.form').addClass('hidden');
     if(formControl != ''){
       var userAge = d.getFullYear() - (moment(formControl, 'DD.MM.YYYY').year());
-      $('.form').addClass('hidden');
+    
 
       if (userAge > 12) {
         var newAge = 21 / norrisAgeCalculation * userAge;
