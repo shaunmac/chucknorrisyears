@@ -22,6 +22,8 @@ $(document).ready(function(){
       }
     } else {
       // form control is empty
+      $('.fail').removeClass('hidden');
+      console.log("form contol: " + formControl);
     }
 
 
