@@ -166,7 +166,11 @@ label {
   display:none;
 }
 
-.btn-calculate, .btn-calculate:visited, .btn-calculate:focus, .btn-calculate:hover, .btn-calculate:active {
+.btn,
+.btn:visited,
+.btn:focus,
+.btn:hover,
+.btn:active {
   -webkit-appearance:none;
   outline:none!important;
   color:#fff;
@@ -181,7 +185,7 @@ label {
 	height: 68px;
   border-radius: 5px;
 }
-.btn-calculate, .btn-calculate:visited, .btn-calculate:focus  {
+.btn, .btn:visited, .btn:focus  {
 	background-color: #f68523;
 	box-shadow: 0 6px 0 0 #a75d1c;
   -webkit-transition: 0.1s ease-in-out;
@@ -194,7 +198,7 @@ label {
   -webkit-transform: translate(-137px, 0); /* Safari */
   transform: translate(-137px, 0);
 }
-.btn-calculate:hover {
+.btn:hover {
   box-shadow: 0 10px 0 0 #a75d1c;
   -webkit-transition: 0.2s ease-in-out;
   -moz-transition: 0.2s ease-in-out;
@@ -205,7 +209,7 @@ label {
   -webkit-transform: translate(-137px, -6px); /* Safari */
   transform: translate(-137px, -6px);
 }
-.btn-calculate:active {
+.btn:active {
   background-color:#a75d1c;
   box-shadow: 0 6px 0 0 #a75d1c;
   -ms-transform: translate(-137px, -2px); /* IE 9 */
