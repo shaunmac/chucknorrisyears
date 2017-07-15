@@ -32,10 +32,10 @@
               </div>
           </div>
           <div class="row">
-              <div class="col-sm-4 col-centered">
+              <div class="col-sm-5 col-centered">
                   <div class="form-group">
                       <div class='input-group date' id='datetimepicker1'>
-                          <input type='text' class="form-control input-date" placeholder="Enter Your Age" />
+                          <input type='text' class="form-control input-date" placeholder="Enter Your Year" />
                           <span class="input-group-addon">
                               <span class="glyphicon glyphicon-calendar"></span>
                           </span>
@@ -43,6 +43,13 @@
                       <input class="btn btn-calculate" type="submit" value="Calculate" />
                   </div>
               </div>
+              <script type="text/javascript">
+                  $(function () {
+                      $('#datetimepicker1').datetimepicker({
+                        format: "YYYY"
+                      });
+                  });
+              </script>
           </div>
         </div>
           <div class="fail row hidden">
