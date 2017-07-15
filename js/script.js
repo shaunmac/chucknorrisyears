@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
   $('#datetimepicker1').datetimepicker({
-      format: 'DD.MM.YYYY'
+    format: "YYYY"
   });
 
   function calculateChuckNorrisYears() {
