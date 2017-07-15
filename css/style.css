@@ -15,6 +15,11 @@ body.success {
   background-position:top right -100px;
 }
 
+.container {
+  height: 100vh;
+  display: table;
+}
+
 .video{
   position: absolute;
   top: 0;
@@ -63,9 +68,9 @@ h2 {
     font-size:2.4vw;
     letter-spacing:0.5vw;
 }
-h2:first-child {
+/*h2:first-child {
   margin-top:20vh;
-}
+}*/
 .success h1 {
   font-size:10.2vw;
   letter-spacing:1.2vw;
@@ -79,13 +84,16 @@ h2:first-child {
   line-height:3.4vw;
   margin-bottom:1vh;
 }
-.success h2:first-child {
+/*.success h2:first-child {
   margin-top:10vh;
-}
+}*/
 .success h1, .success h2 {
   text-align:left;
 }
-
+.align-middle {
+  display: table-cell;
+  vertical-align: middle;
+}
 label {
   color:#fff;
 }
@@ -97,9 +105,9 @@ label {
   background: #000;
   position: fixed;
   top: 0; right: 0; bottom: 0; left: 0;
-  z-index: -99;
+  z-index:-1;
   width:100%;
-  height:100%;
+  height:100vh;
 }
 @media (max-width: 767px){
     .video-background{
