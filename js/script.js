@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+  var videoResult = 'video/result-video.mp4';
+  var videoHome =  'video/home-video.mp4';
+
   $('#datetimepicker1').datetimepicker({
       format: 'YYYY'
   });
@@ -8,23 +11,26 @@ $(document).ready(function(){
     var d = new Date();
     var norrisAgeCalculation = d.getFullYear() - 1940;
     var formControl = $('.form-control').val();
-    $('.form').addClass('hidden');
-    if(formControl != ''){
-      var userAge = d.getFullYear() - (moment(formControl, 'YYYY').year());
 
-      if (userAge > 12) {
-        var newAge = 21 / norrisAgeCalculation * userAge;
-        $('.user-age').html(Math.round(newAge));
-        $('.success').removeClass('hidden');
+    if(formControl.length === 4) {
+
+      $('.form').addClass('hidden');
+      if(formControl != ''){
+        var userAge = d.getFullYear() - (moment(formControl, 'YYYY').year());
+
+        if (userAge > 12) {
+          var newAge = 21 / norrisAgeCalculation * userAge;
+          $('.user-age').html(Math.round(newAge));
+          $('.video').attr('src', videoResult);
+          $('.success').removeClass('hidden');
+        } else {
+          $('.too-young').removeClass('hidden');
+        }
       } else {
-        $('.too-young').removeClass('hidden');
+        $('.fail').removeClass('hidden');
+        console.log("form contol: " + formControl);
       }
-    } else {
-      // form control is empty
-      $('.fail').removeClass('hidden');
-      console.log("form contol: " + formControl);
     }
-
 
   }
 
@@ -35,7 +41,7 @@ $(document).ready(function(){
   $('.btn-back').on('touch click', function(){
     $(this).parent().addClass('hidden');
     $('.form').removeClass('hidden');
-
+    $('.video').attr('src', videoHome);
   });
 
 });
